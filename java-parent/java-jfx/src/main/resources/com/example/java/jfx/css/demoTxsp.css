@@ -1,0 +1,13 @@
+.searchBtn {
+    -fx-text-fill: #E9593A;
+    -fx-border-radius: 40px;
+    -fx-background-color: #44444F;
+    -fx-background-radius: 40px;
+}
+
+.tfSearch {
+    -fx-background-radius: 40px;
+    -fx-background-color: #393942;
+    -fx-text-fill: white;
+    -fx-border-radius: 40px;
+}

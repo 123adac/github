@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            prefHeight="600.0" prefWidth="800.0"
+            stylesheets="@../css/style.css" fx:controller="top.xkk.address.view.RootController">
+    <top>
+        <HBox alignment="CENTER_LEFT" style="-fx-background-color: transparent;" prefHeight="50">
+            <Button mnemonicParsing="false" styleClass="btn" onAction="#handleShowBirthdayStatistics" text="生日统计"></Button>
+            <padding>
+                <Insets left="100.0" top="45.0"/>
+            </padding>
+        </HBox>
+    </top>
+</BorderPane>

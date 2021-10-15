@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+            prefWidth="700.0" style="-fx-background-color: #336F91;" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="top.xkk.weather.view.PrimaryController">
+    <children>
+        <Label layoutX="195.0" layoutY="53.0" text="Today's Weather" textAlignment="CENTER" AnchorPane.topAnchor="50.0">
+            <font>
+                <Font name="System Bold" size="36.0"/>
+            </font>
+        </Label>
+        <HBox alignment="CENTER" layoutX="165.0" layoutY="140.0" spacing="30.0">
+            <children>
+                <TextField prefHeight="35.0" prefWidth="280.0" promptText="请输入城市" fx:id="cityInput"/>
+                <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="80.0" text="Search"
+                        onAction="#getWeatherData"/>
+            </children>
+        </HBox>
+        <VBox layoutX="114.0" layoutY="236.0" spacing="5.0">
+            <children>
+                <Label  fx:id="currentDateLabel">
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Label>
+                <Label  fx:id="currentCityLabel">
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Label>
+                <Label  fx:id="currentTemperatureLabel">
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Label>
+                <Label  fx:id="maxTemperatureLabel">
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Label>
+                <Label  fx:id="minTemperatureLabel">
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Label>
+                <Label  fx:id="winSpeedLabel">
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

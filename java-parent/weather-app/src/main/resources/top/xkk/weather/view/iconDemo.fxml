@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import org.kordamp.ikonli.javafx.StackedFontIcon?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER_LEFT" spacing="20">
+    <padding>
+        <Insets left="30.0" right="30.0"/>
+    </padding>
+
+    <!-- 不加StackedFontIcon没法设置大小，放在一个StackedFontIcon里面的图标会呈现堆叠效果 -->
+    <StackedFontIcon iconSize="48">
+        <FontIcon iconColor="#9e8dd9" iconLiteral="mdi-human"/>
+        <FontIcon iconColor="#2D333B" iconLiteral="mdi-github-circle"/>
+    </StackedFontIcon>
+
+    <StackedFontIcon iconSize="48">
+        <FontIcon iconColor="#36a4a4" iconLiteral="mdi-fish"/>
+    </StackedFontIcon>
+
+    <!-- 只能默认大小 -->
+    <FontIcon iconColor="#d75157" iconLiteral="mdi-evernote"/>
+
+    <StackedFontIcon iconSize="48">
+        <FontIcon iconColor="#36a4a4" iconLiteral="mdi-access-point"/>
+    </StackedFontIcon>
+
+    <StackedFontIcon iconSize="48">
+        <FontIcon iconColor="#ed8d13" iconLiteral="mdi-alert"/>
+    </StackedFontIcon>
+
+    <StackedFontIcon iconSize="48">
+        <FontIcon iconColor="#3eb25e" iconLiteral="mdi-android"/>
+    </StackedFontIcon>
+
+    <StackedFontIcon iconSize="48">
+        <FontIcon iconColor="#07140b" iconLiteral="mdi-apple"/>
+    </StackedFontIcon>
+
+    <!-- 带字体图标的按钮 -->
+    <Button prefWidth="90" prefHeight="40" text="评论" style="-fx-font-size: 16;-fx-background-color: #579ebb;-fx-cursor: hand;">
+        <graphic>
+            <StackedFontIcon iconSize="24">
+                <FontIcon iconColor="#f6f6f6" iconLiteral="mdi-comment-text-outline"/>
+            </StackedFontIcon>
+        </graphic>
+    </Button>
+</HBox>
